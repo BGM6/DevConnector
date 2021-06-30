@@ -17,12 +17,12 @@ const UserSchema = new Schema({
 	avatar: {
 		type: String,
 	},
-	data: {
+	date: {
 		type: Date,
 		default: Date.now
 	}
 });
 
-const User = model('User', UserSchema);
+const User = model('user', UserSchema);
 
 module.exports = User;
